@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom property</title>
+</head>
+<body>
+    <div id="container">
+        <!-- #container -->
+        <p>Hello World</p>
+        <p style="display:none;">Hidden Text</p>
+    </div>
+    <button onclick="text()">TEXT</button>
+    <button onclick="html()">HTML</button>
+    <script>
+        <!-- 1. div요소에 접근하기 -->
+//        let domVal = document.getElementById('container');
+//        console.log('요소 가져오기 :', domVal);
+        
+        function text() {
+            console.log(domVal.innerText);
+            console.log(domval.textContent);
+            domVal.innerText='<h1>JavaScript</h1>'
+        }
+        function html(){
+            domVal.innerHTML='<h1>JavaScript</h1>'
+        }
+    </script>
+</body>
+</html>

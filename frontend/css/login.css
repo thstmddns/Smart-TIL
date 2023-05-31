@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'MBC1961GulimM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/MBC1961GulimM.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'MBC1961GulimN';
+    
+}
+body {
+    background-color: coral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+fieldset {
+    width: 400px;
+    height: 360px;
+    border-color: aliceblue;
+    border-style: solid;
+    font-size: 2em;
+    font-weight: 900;
+    border-radius: 20px;
+}
+
+input {
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 25px;
+    border-color: rgba(255, 255, 255, 0.6);
+    border-width: 5px;
+    position:relative;
+    left: 15px;
+    top: 30px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+input::placeholder {
+    opacity: 0.5;
+    text-shadow: 1px 1px 0.5px black;
+}
+
+input:focus {
+    border-color: rgba(255, 255, 255, 0.6);
+    outline-color: rgba(255, 255, 255, 0.6);
+}
+
+button {
+    width: 120px;
+    height: 50px;
+    font-size: 0.7em;
+    position: relative;
+    top: 40px;
+    left: 50px;
+    border-radius:30px;
+    border-style: outset;
+    border-color: aliceblue;
+    background-color: rgba(201, 232, 234, 0.384);
+}
+
+button:hover {
+    border-style: inset;
+}
+
+.google {
+    height: 35px;
+    width: 250px;
+}
+.naver {
+    height: 35px;
+    width: 250px;
+}

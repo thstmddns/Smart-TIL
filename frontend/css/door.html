@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+
+        }
+        .wall {
+            width: 500px;
+            height: 500px;
+            background-color: gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .out {
+            width: 200px;
+            height: 400px;
+            background-color: skyblue;
+            perspective: 1000px;
+        }
+        .door { 
+            width: 200px;
+            height: 400px;
+            background-color: brown;
+            transform-origin: 100% 0 0;
+            transition-duration: 2s;
+            
+        }
+        .door:hover {
+            transform: rotateY(120deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>문 열어주세요</h1>
+    <div class="wall">
+        <div class="out">
+            <div class="door">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

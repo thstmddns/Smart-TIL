@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+.menu_container {
+    position:absolute;
+    top:70%;
+    left:25%;
+    padding:10px;
+    border-right:5px solid lightgray;
+    border-bottom:5px solid lightgray;
+}
+
+ul.list {
+    list-style: none;
+    margin:0;
+    padding:0;
+    border-bottom:1px solid black;
+}
+
+ul.list::after {
+    content:'';
+    display:block;
+    clear:both;
+}
+
+.btn_tap {
+    display:block;
+    padding:10px 20px 10px 20px;
+    float:left;
+    margin-right:-1px;
+    margin-bottom:-1px;
+    color:cadetblue;
+    text-decoration: none;
+    cursor:pointer;
+}
+
+.orange {
+    border-top:2px solid chocolate;
+    border-right:1px solid black;
+    border-bottom:1px solid white;
+    border-left:1px solid black;
+    color:chocolate;
+    margin-top:-2px;
+}
+
+.content {
+    display:none;
+    padding:10px;
+}
+
+.show {
+    display:block;
+    border-right : 1px solid black;
+    border-left:1px solid black;
+    border-bottom:2px solid chocolate;
+    height:130px;
+    width:400px;
+}
+    </style>
+</head>
+<body>
+    <div class="menu_container">
+        <ul class="list">
+            <li class="btn_tap">HTML</li>
+            <li class="btn_tap ">CSS</li>
+            <li class="btn_tap orange">JavaScript</li>
+        </ul>
+        <div class="content">
+            <p>html이란?<br> 웹 컨텐츠의 구조를 짜고 의미를 부여하는 마크업 언어. <br>
+                예를 들어, 페이지의 어디가 문단이고, 헤딩이고,<br>
+                데이터 표와 외부 이미지/비디오인지 정의합니다. 
+            </p>
+        </div>
+        <div class="content">
+            <p>CSS란? <br> HTML콘텐츠에 스타일을 적용할 수 있는 스타일 규칙 언어 <br>
+            배경색을 추가하고, 글꼴을 바꾸고, 콘텐츠를 <br>
+        신문처럼 다열 레이아웃으로 배치할 수 있습니다. </p>
+        </div>
+        <div class="content show">
+            <p>JavaScirpt란? <br>
+            동적으로 콘텐츠를 바꾸고, 멀티미디어를 제어하고, 애니메이션을 
+        추가하는 등 거의 모든것을 만들 수 있는 스크립팅 언어입니다. 
+     <br>정말 모든 게 가능하지는 않겠지만, JavaScript 코드 몇 줄만으로도 놀라운 결과를 이룰 수 있습니다. </p>
+        </div>
+    </div>
+    <script>
+        let btn1 = document.querySelectorAll('.btn_tap')[0];
+        let btn2 = document.querySelectorAll('.btn_tap')[1];
+        let btn3 = document.querySelectorAll('.btn_tap')[2];
+        let content1 = document.querySelectorAll('.content')[0];
+        let content2 = document.querySelectorAll('.content')[1];
+        let content3 = document.querySelectorAll('.content')[2];
+        btn1.addEventListener('click', () => {
+            btn1.classList.add('orange');
+            btn2.classList.remove('orange');
+            btn3.classList.remove('orange');
+            content1.classList.add('show');
+            content2.classList.remove('show');
+            content3.classList.remove('show');
+        })
+        btn2.addEventListener('click', () => {
+            btn1.classList.remove('orange');
+            btn2.classList.add('orange');
+            btn3.classList.remove('orange');
+            content1.classList.remove('show');
+            content2.classList.add('show');
+            content3.classList.remove('show');
+        })
+        btn3.addEventListener('click', () => {
+            btn1.classList.remove('orange');
+            btn2.classList.remove('orange');
+            btn3.classList.add('orange');
+            content1.classList.remove('show');
+            content2.classList.remove('show');
+            content3.classList.add('show');
+        })
+    </script>
+</body>
+</html>

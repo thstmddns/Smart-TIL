@@ -1,0 +1,46 @@
+.body {
+    margin: 0;
+}
+
+.wrapper{
+    width: 500px; 
+    height: 500px;
+}
+
+header {
+    height: 10%;
+    background-color: #ea4335;
+}
+nav {
+    height: 10%;
+    background-color: #ff5e00;
+}
+
+.main{
+    height: 60%;
+    top : 20%;
+    background-color: bisque;
+}
+
+.side {
+    width: 30%;
+    height: 100%;
+    background-color: #4285f4;
+    float: left;
+}
+
+.item1 {
+    height: 50%;
+    background-color: green;
+}
+
+.item2 {
+    height: 50%;
+    background-color: yellow;
+}
+
+footer { 
+    height: 20%;
+    background-color: aquamarine;
+}
+

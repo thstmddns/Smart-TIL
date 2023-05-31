@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>자판기</h1>
+    <hr>
+    <p>Menu</p>
+    <div>솔의눈 400원</div>
+    <div>콜라 500원</div>
+    <div>밀키스 600원</div>
+    <div>오렌지 주스 700원</div>
+    <br>
+    <table>
+        <tr>
+            <td>
+                <button onclick="sol()">솔의눈 400원</button>
+            </td>
+            <td>
+                <button onclick="coke()">콜라 500원</button>
+            </td>
+            <td>
+                <button onclick="milkis()">밀키스 600원</button>
+            </td>
+            <td>
+                <button onclick="orange()">오렌지 주스 700원</button>
+            </td>
+        </tr>
+
+    </table>
+
+    <script>
+        /*let Menu = {'솔의눈' : 400,
+                '콜라' : 500,
+                '밀키스' : 600,
+                '오렌지 주스' : 700}
+        let choose = prompt('음료를 골라주세요')
+        let coin = prompt('돈을 넣어주세요')
+        if (choose == null) {
+            document.write('음료를 골라주세요')
+        }
+        else if (coin >= 5000) {
+            document.write('금액이 너무 큽니다.')
+        }
+        else if (coin <= 0 || choose == '솔의눈' && coin < 400) {
+            document.write('돈을 넣어주세요')
+        }
+        else if (coin <= 0 || choose == '콜라' && coin < 500) {
+            document.write('돈을 넣어주세요')
+        }
+        else if (coin <= 0 || choose == '밀키스' && coin < 600) {
+            document.write('돈을 넣어주세요')
+        }
+        else if (coin <= 0 || choose == '오렌지 주스' && coin < 700) {
+            document.write('돈을 넣어주세요')
+        }
+        else {
+            document.write(`${choose}의 가격은 ${Menu[choose]}입니다. ${coin}에 대한 거스름돈 ${coin - Menu[choose]}입니다.`)
+        }*/
+        function operator() {
+            let Menu = {'솔의눈' : 400,
+            '콜라' : 500,
+            '밀키스' : 600,
+            '오렌지 주스' : 700}
+    
+            let coin = prompt('돈을 넣어주세요')
+            
+            if (choose == null) {
+                document.write('음료를 골라주세요')
+            }
+            else if (coin >= 5000) {
+                document.write('금액이 너무 큽니다.')
+            }
+            else if (coin <= 0 || choose == '솔의눈' && coin < 400) {
+                document.write('돈을 넣어주세요')
+            }
+            else if (coin <= 0 || choose == '콜라' && coin < 500) {
+                document.write('돈을 넣어주세요')
+            }
+            else if (coin <= 0 || choose == '밀키스' && coin < 600) {
+                document.write('돈을 넣어주세요')
+            }
+            else if (coin <= 0 || choose == '오렌지 주스' && coin < 700) {
+                document.write('돈을 넣어주세요')
+            }
+            else {
+                document.write(`${choose}의 가격은 ${Menu[choose]}입니다. ${coin}에 대한 거스름돈 ${coin - Menu[choose]}입니다.`)
+            }
+        } 
+        function sol() {
+            let choose = '솔의눈';
+            let Menu = {'솔의눈' : 400,
+            '콜라' : 500,
+            '밀키스' : 600,
+            '오렌지 주스' : 700}
+    
+            let coin = prompt('돈을 넣어주세요')
+            
+            if (choose == null) {
+                document.write('음료를 골라주세요')
+            }
+            else if (coin >= 5000) {
+                document.write('금액이 너무 큽니다.')
+            }
+            else if (coin <= 0 || choose == '솔의눈' && coin < 400) {
+                document.write('돈을 넣어주세요')
+            }
+            else if (coin <= 0 || choose == '콜라' && coin < 500) {
+                document.write('돈을 넣어주세요')
+            }
+            else if (coin <= 0 || choose == '밀키스' && coin < 600) {
+                document.write('돈을 넣어주세요')
+            }
+            else if (coin <= 0 || choose == '오렌지 주스' && coin < 700) {
+                document.write('돈을 넣어주세요')
+            }
+            else {
+                document.write(`${choose}의 가격은 ${Menu[choose]}입니다. ${coin}에 대한 거스름돈 ${coin - Menu[choose]}입니다.`)
+            }
+        }
+        function coke() {
+            let choose = '콜라';
+            let Menu = {'솔의눈' : 400,
+            '콜라' : 500,
+            '밀키스' : 600,
+            '오렌지 주스' : 700}
+    
+            let coin = prompt('돈을 넣어주세요')
+            
+            if (choose == null) {
+                document.write('음료를 골라주세요')
+            }
+            else if (coin >= 5000) {
+                document.write('금액이 너무 큽니다.')
+            }
+            else if (coin <= 0 || choose == '솔의눈' && coin < 400) {
+                document.write('돈을 넣어주세요')
+            }
+            else if (coin <= 0 || choose == '콜라' && coin < 500) {
+                document.write('돈을 넣어주세요')
+            }
+            else if (coin <= 0 || choose == '밀키스' && coin < 600) {
+                document.write('돈을 넣어주세요')
+            }
+            else if (coin <= 0 || choose == '오렌지 주스' && coin < 700) {
+                document.write('돈을 넣어주세요')
+            }
+            else {
+                document.write(`${choose}의 가격은 ${Menu[choose]}입니다. ${coin}에 대한 거스름돈 ${coin - Menu[choose]}입니다.`)
+            }
+        }
+        function coke() {
+            let choose = '밀키스';
+            let Menu = {'솔의눈' : 400,
+            '콜라' : 500,
+            '밀키스' : 600,
+            '오렌지 주스' : 700}
+    
+            let coin = prompt('돈을 넣어주세요')
+            
+            if (choose == null) {
+                document.write('음료를 골라주세요')
+            }
+            else if (coin >= 5000) {
+                document.write('금액이 너무 큽니다.')
+            }
+            else if (coin <= 0 || choose == '솔의눈' && coin < 400) {
+                document.write('돈을 넣어주세요')
+            }
+            else if (coin <= 0 || choose == '콜라' && coin < 500) {
+                document.write('돈을 넣어주세요')
+            }
+            else if (coin <= 0 || choose == '밀키스' && coin < 600) {
+                document.write('돈을 넣어주세요')
+            }
+            else if (coin <= 0 || choose == '오렌지 주스' && coin < 700) {
+                document.write('돈을 넣어주세요')
+            }
+            else {
+                document.write(`${choose}의 가격은 ${Menu[choose]}입니다. ${coin}에 대한 거스름돈 ${coin - Menu[choose]}입니다.`)
+            }
+        }
+        function coke() {
+            let choose = '오렌지 주스';
+            let Menu = {'솔의눈' : 400,
+            '콜라' : 500,
+            '밀키스' : 600,
+            '오렌지 주스' : 700}
+    
+            let coin = prompt('돈을 넣어주세요')
+            
+            if (choose == null) {
+                document.write('음료를 골라주세요')
+            }
+            else if (coin >= 5000) {
+                document.write('금액이 너무 큽니다.')
+            }
+            else if (coin <= 0 || choose == '솔의눈' && coin < 400) {
+                document.write('돈을 넣어주세요')
+            }
+            else if (coin <= 0 || choose == '콜라' && coin < 500) {
+                document.write('돈을 넣어주세요')
+            }
+            else if (coin <= 0 || choose == '밀키스' && coin < 600) {
+                document.write('돈을 넣어주세요')
+            }
+            else if (coin <= 0 || choose == '오렌지 주스' && coin < 700) {
+                document.write('돈을 넣어주세요')
+            }
+            else {
+                document.write(`${choose}의 가격은 ${Menu[choose]}입니다. ${coin}에 대한 거스름돈 ${coin - Menu[choose]}입니다.`)
+            }
+        }
+    </script>
+</body>
+</html>

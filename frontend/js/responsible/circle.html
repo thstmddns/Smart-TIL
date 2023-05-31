@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>circle change</title>
+    <style>
+        body {
+            margin:0;
+        }
+        .wrapper {
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height:100vh;
+        }
+        .circle {
+            width :100px;
+            height: 100px;
+            background-color: tomato;
+        }
+        .round {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="circle">
+
+
+        </div>
+        <div class="changBtn">
+            <!-- <button id="on">on</button>
+            <button id="off">off</button> -->
+            <button id="toggleBtn">토글</button>
+        </div>
+    </div>
+
+
+    <script>
+        // 1. 버튼 정의
+        // 2. 대상 정의
+
+
+        const circle = document.querySelector('.circle');
+        // const on = document.querySelector('#on');
+        // const off = document.querySelector('#off');
+        const toggleBtn = document.querySelector('#toggleBtn')
+
+
+        // on.addEventListener('click',()=>{
+        //     circle.classList.add('round');
+        //     // 대상에.클래스를.추가해주세요('이 이름의');
+        // })
+
+
+        // off.addEventListener('click',()=>{
+        //     circle.classList.remove('round');
+        // })
+
+
+  	 toggleBtn.addEventListener('click',()=>{
+            circle.classList.toggle('round');
+        })
+
+
+
+
+    </script>
+</body>
+</html>

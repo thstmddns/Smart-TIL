@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 꺽쇠는 바로 아래에 있는 자식에게만 적용*/
+        .rule > strong {
+            color: red;
+        }
+        .rule li {
+            color:green
+        }
+        li+li {
+            color: red;
+        }
+        .rule > ol > li ~ li {
+            color: red;
+        }
+        ol > span {
+            color: red;
+        }
+        ol > strong + span {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="rule">
+        <strong>연수생수칙</strong>
+        <ol>
+            <li>지각하지 않기</li>
+            <li>결석하지 않기</li>
+            <strong>조퇴도 안됨</strong>
+            <span>불가피 할 땐 꼭 담임선생님께 말하기</span>
+            <li>복습하기</li>
+        </ol>
+    </div>
+    <div id="rule"></div>
+</body>
+</html>

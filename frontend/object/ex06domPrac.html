@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = 'c'>
+        <h1>클릭 한번 해볼까요?</h1>
+        <button onclick="h()">h1태그 생성</button>
+        <button onclick="a()">a태그 생성</button>
+        <button onclick="ul()">ul 태그 생성</button>
+    </div>
+    <script>
+        let taggingH = document.getElementById('c')
+
+        function h() {
+            taggingH.innerHTML+='<h1>DOM 활용하기!</h1>'
+        }
+        function a() {
+            taggingH.innerHTML+='<a href="https://www.google.com">Google로 이동!</a>'
+        }
+        function ul() {
+            taggingH.innerHTML+='<ul><li>HTML</li></ul>'
+            taggingH.innerHTML+='<ul><li>CSS</li></ul>'
+            taggingH.innerHTML+='<ul><li>JS</li></ul>'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 미쳤다</title>
+</head>
+<body>
+    <form action="#">
+        <!-- <input type="text" placeholder="아이디를 입력해주세요"> -->
+        <input type="text" value="아이디", maxlength="7", required> <br>
+
+        <!-- 패스워드는 입력 값을 자동으로 가려준다 -->
+        <input type="password", name="", id="">
+        <br>
+        <select name="" id="">
+            <option value="">선택</option>
+            <option value="soccer">축구</option>
+            <option value="baseball">야구</option>
+            <option value="basketball">농구</option>
+
+        </select>
+        <br>
+        <label for="name">이름</label>
+        <input type="text" id="name">
+        <fieldset>
+            <legend>입력양식</legend>
+            이름<input type="text" name="" id=""> <br>
+            아이디<input type="text" name="" id=""><br>
+            비밀번호<input type="password" name="" id="">
+        </fieldset>
+        <!-- input:radio = 라디오버튼, 한 번에 하나씩만 선택된다. -->
+        <input type="radio" name="라디오" id="radio">
+        <input type="radio" name="라디오" id="radio">
+        <input type="radio" name="라디오" id="radio">
+        <input type="radio" name="라디오" id="radio">
+        <!-- input:checkbox = 체크박스, 여러 개 한번에 선택된다. -->
+        <input type="checkbox" name="" id="checkbox">
+        <input type="checkbox" name="" id="checkbox">
+        <input type="checkbox" name="" id="checkbox">
+        <input type="checkbox" name="" id="checkbox">
+        <!-- file :파일 업로드 -->
+        <input type="file" name="" id="">
+        <!-- color : 색 선택 -->
+        <input type="color" name="" id="">
+        <!-- number : 수량 선택 -->
+        <input type="number" name="" id="">
+
+        <input type="button" value="입력">
+        <!-- 초기화, 제출(reset, submit)은 폼 태그 안에서 작동한다. -->
+        <button type="reset">초기화</button>
+        <button type="submit">제출</button>
+        <input type="date" name="" id="">
+    </form>
+    
+</body>
+</html>

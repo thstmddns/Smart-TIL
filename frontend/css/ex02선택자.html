@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*아이디 선택자 #으로 선택*/
+        #list{
+            text-align: center;
+        }
+        list2 {
+            text-align: right;
+        }
+        <!-- p {
+            color:blue;
+        } -->
+        li {
+            color:brown;
+        }
+        /*전체선택자는 순위가 낮다. 이미 적용된 속성이 있으면 전체선택자의 선언은 적용되지 않는다*/
+        * {
+            background-color: aqua;
+            color: red;
+        }
+        body {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS</h1>
+    <p>웹 페이지를 꾸며주는 스타일시트 언어</p>
+    <ul>
+        <li>CSS 기본구조</li>
+        <li id="list">CSS 선택자</li>
+        <li class="list2">CSS 스타일</li>
+    </ul>
+</body>
+</html>

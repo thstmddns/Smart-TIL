@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fbb5039cb7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="alert">
+        <div class="box">
+            <p>안녕하세요</p>
+            <button id="close">닫기</button>
+        </div>
+    </div>
+    <div class="wrapper">
+        <header>
+            <div class="logo"><i class="fa-solid fa-wand-magic-sparkles"></i>seungwoon</div>
+            <div class="nav">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                    <li>About</li>
+                </ul>
+            </div>
+        </header>
+        <div class="dropdown">
+            <div class="dropdown-card">
+                <li>태그</li>
+                <li>선택자</li>
+                <li>프론트엔드</li>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const css = document.querySelectorAll('li')[0];
+        const div = document.querySelector('.dropdown')
+        css.addEventListener('click', () => {
+            list.classList.toggle('show')
+        })
+
+        const about = document.querySelectorAll('li')[3];
+        const alert = document.querySelector('.alert');
+        about.addEventListener('click', () => {
+            alert.classList.add('show2');
+        })
+
+        const close = document.querySelector('#close')
+        close.addEventListener('click', () => {
+            alert.classList.remove('show2')
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bus fare</title>
+</head>
+<body>
+    <h1 id='notice'></h1>
+<script>
+//    const notice = document.getElementById('notice');
+//    notice.innerText='입력' -->
+
+//const notice = document.getElementById('notice')
+//const age = Number(prompt('나이를 입력해보거라'))
+//fare = 1200
+//if(isNaN(age) || age.value == ' '){
+//    alert( '특수문자 또는 공백이 입력되었구나. 다시 입력하거라.');
+//};
+//if (age < 0  || age > 120) {
+//    //notice.innerText='곰곰이 생각해보고 다시 입력해보거라'
+//    console.log('곰곰이 생각해보고 다시 입력해보거라')
+//}
+//else if (age < 7 || age >= 65) {
+//    console.log(`당첨 ${fare - 1200}원이니라`)
+//}
+//else if (age >= 7 || age <= 20) {
+//    console.log(`당첨 ${fare*0.6}원이니라`)
+//}
+//else {`안타깝구나!! ${fare}내거라`}
+
+
+
+
+const notice = document.getElementById('notice')
+let age = prompt('몇살이세요')
+let busFare = 1200;
+
+if (age == null) {
+    notice.innerText="나이를 입력 해주세요"
+} else if (isNaN(age)) {
+    notice.innerText = '숫자를 입력 해 주세요'
+} else if (age < 0  || age > 120) {
+    notice.innerText='곰곰이 생각해보고 다시 입력해보거라'
+} else if (age < 7 || age >= 65) {
+    notice.innerText = `당첨 ${busFare - 1200}원이니라`
+}
+else if (age >= 7 || age <= 20) {
+    notice.innerText = `당첨 ${busFare*0.6}원이니라`
+} else {`안타깝구나!! ${busFare}내거라`}
+</script>
+</body>
+</html>

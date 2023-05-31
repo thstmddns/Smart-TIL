@@ -1,0 +1,39 @@
+body {
+    margin: 0px;
+}
+
+div {
+    width: 100px;
+    height: 400px;
+    background-color: crimson;
+    opacity: 0.1;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+.static {
+    position: static;
+}
+
+.relative {
+    position: relative;
+    top: 30px;
+    left: 50px;
+}
+
+.absolute {
+    position: absolute;
+    background-color: blueviolet;
+    top: 30px;
+}
+
+/* .fixed {
+    position: fixed;
+    background-color: blue;
+    top: 20px;
+} */
+
+.sticky {
+    position: sticky;
+    background-color: aqua;
+    top: 50px;
+}

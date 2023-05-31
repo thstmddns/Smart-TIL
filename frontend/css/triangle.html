@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .triangle {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-top:  80px solid transparent;
+            border-bottom: 80px solid skyblue;
+        }
+        .youtube {
+            width: 0px;
+            height: 0px;
+            border-left: 50px solid white;
+            border-right: 50px solid transparent;
+            border-top:  50px solid transparent;
+            border-bottom: 50px solid transparent;
+            position: relative;
+            left: 25px;
+        }
+        .box {
+            background-color: red;
+            width: 200px;
+            height: 150px;
+            border-radius: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition-duration:2s;
+        }
+        .youtube:hover {
+            transform: scale(1.2);
+            transform: rotate(-45deg);
+            transform: translateY(-30px);
+        }
+    </style>
+</head>
+<body>
+    <div class="triangle"></div>
+    <div class="box">
+        <div class="youtube">
+        </div>
+    </div>
+</body>
+</html>

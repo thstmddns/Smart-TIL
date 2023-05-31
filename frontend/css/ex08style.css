@@ -1,0 +1,64 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    border-radius: 10px;   
+}
+div {
+    width:70px;
+    height:40px;
+    background-color: #9999cc;
+    margin: 10px;
+}
+.solid { 
+    border-style: solid;
+}
+
+.double {
+    border-style: double;
+}
+
+.dotted { 
+    border-style: dotted;
+}
+
+.dashed {
+    border-style: dashed;
+}
+
+.groove {
+    border-style: groove;
+    border-width: 10px;
+}
+
+.ridge {
+    border-style: ridge;
+    border-width: 10px;
+}
+
+.inset {
+    border-style: inset;
+    border-width: 10px;
+}
+
+.outset {
+    border-style: outset;
+    border-width: 10px;
+}
+
+.underline {
+    border-bottom-style: double;
+    border-left-style: dashed;
+    border-top-style: inset;
+    border-top-width: 5px;
+    background-color: aliceblue;
+    text-align: center;
+    line-height: 40px;
+}
+
+.triangle {
+    width: 0px;
+    height: 0px;
+    border-width: 40px;
+    border-color: #9999cc;
+}
